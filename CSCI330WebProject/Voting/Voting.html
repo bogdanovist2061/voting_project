@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!--
+	Beckman
+	Voting.html
+-->
+
+<html>
+    <head>
+        <title>Voting</title>
+        <meta charset="UTF-8">
+		<link rel='stylesheet' type='text/css' href='Voting.css'>
+		<script src="Voting.js"></script>
+	</head>
+	<body>
+	<form method="post" action="Voting.php">
+	
+		<!--********************Navigation Bar*************-->
+		<div class="navBar">
+			<a href="\..\..\csci330webproject\Home\Home.html">Home</a>
+			<a href="\..\..\csci330webproject\VoterSetup\VoterSetup.html">Registration</a>
+			<a class="active" href="Voting.html">Cast Ballot</a>
+			<a href="\..\..\csci330webproject\VotingResults\VotingResults.php">Real-time
+				Election Results</a>
+		</div>
+		
+		<div class="instructionHeader">
+			<h1 style="text-align: center;">Taking part in your democracy has never been easier!</h1>
+			<ol>
+				<li>Scroll down and choose candidates and/or ballot measures using the radio 
+					buttons.</li>
+				<li>At the bottom of the page enter your voter ID and click the "Cast Ballot"
+					button.</li>
+			</ol>
+		</div>
+		
+		<!-- **************Mayoral Race************* -->
+		<div class="ballot1">
+			<h1 style="text-align: left;">Mayoral Race:</h1>
+				
+				<img src="KarlMarx.jpg" alt="Photo of Karl Marx">
+				<h2>Karl Marx</h2>
+				<ul>
+					<li>Father of communism</li>
+					<li>Great beard</li>
+					<li>The proletariat's top pick</li>
+				</ul>
+				<label>
+					<input name="mayor" type="radio" value="Karl">Vote for Karl</label>
+				
+				<img style="float: right;" src="EmmaGoldman.jpg" alt="Photo of Emma Goldman">
+				<h2 style="text-align: right;">Emma Goldman</h2>
+				<ul style="list-style-position: outside; float: right;">
+					<li>Greatest anarchist of all time</li>
+					<li>Cool glasses</li>
+					<li>Vote before the US deports her</li>
+				</ul>
+				<label style="position: relative; top: 200px; left: 900px">
+					<input name="mayor" type="radio" value="Emma">Vote for Emma</label>
+		</div>
+		
+		<!-- **************Sixth Ward Race************* -->
+		<div class="ballot2">
+			<h1 style="text-align: left;">City Council - Sixth Ward:</h1>
+				
+				<img src="EllaBaker.jpg" alt="Photo of Ella Baker">
+				<h2>Ella Baker</h2>
+				<ul>
+					<li>Black Freedom Movement leader</li>
+					<li>Secretly hated her husband, as well as MLK, Jr.</li>
+					<li>Is thoroughly pleased that you're voting in general</li>
+				</ul>
+				<label>
+					<input name="sixthWard" type="radio" value="Ella">Vote for Ella</label>
+				
+				<img style="float: right;" src="FredHampton.png" alt="Photo of Fred Hampton">
+				<h2 style="text-align: right;">Fred Hampton</h2>
+				<ul style="list-style-position: outside; float: right;">
+					<li>Member of Chicago-branch Black Panthers</li>
+					<li>Raises unprecedented class-consciousness in his spare time</li>
+					<li>Vote before the FBI murders him</li>
+				</ul>
+				<label style="position: relative; top: 200px; left: 900px">
+					<input name="sixthWard" type="radio" value="Fred">Vote for Fred</label>
+		</div>
+		
+		<!-- **************Ballot Proposals************* -->
+		<div class="ballot3">
+		
+			<h1 style="text-align: left;">City-wide Ballot Proposals:</h1>
+			<h2 style="text-align: center; text-decoration: underline;">1. Recreational Marijuana Usage</h2>
+			<h3 style="padding-left: 20px;">This is a proposal to completely legalize the sale,
+				distribution, and use of marijuana in any of its various forms.</h3>
+			<p><label style="padding-left: 20px;">
+				<input name="prop1" type="radio" value="yes">Vote "yes" on Proposal 1</label></p>
+			<p><label style="padding-left: 20px;">
+				<input name="prop1" type="radio" value="no">Vote "no" on Proposal 1</label></p>
+				
+			<h2 style="text-align: center; text-decoration: underline;">2. Progressive Taxation</h2>
+			<h3 style="padding-left: 20px;">This proposal seeks to change all taxation throughout
+				the city into a progressive-style tax in an effort to ease tax burdens on the lower
+				and middle classes.</h3>
+			<p><label style="padding-left: 20px;">
+				<input name="prop2" type="radio" value="yes">Vote "yes" on Proposal 2</label></p>
+			<p><label style="padding-left: 20px;">
+				<input name="prop2" type="radio" value="no"">Vote "no" on Proposal 2</label></p>
+				
+			<h2 style="text-align: center; text-decoration: underline;">3. Free College Tuition</h2>
+			<h3 style="padding-left: 20px;">This proposal will require all colleges and universities
+				in the city to provide tuition free-of-charge to all students.</h3>
+			<p><label style="padding-left: 20px;">
+				<input name="prop3" type="radio" value="yes">Vote "yes" on Proposal 3</label></p>
+			<p><label style="padding-left: 20px;">
+				<input name="prop3" type="radio" value="no">Vote "no" on Proposal 3</label></p>
+			
+		</div>
+		
+		<!--*****************Enter voter ID and submit button************-->
+		<div class="cast">
+			<label>Enter your voter ID here: 
+				<input type="text" name="voterID" size="20"></label>			
+			<input id="submit" class="castBtn" type="submit" value="Cast Ballot">
+		</div>
+		
+	</form>	
+	</body>
+</html>

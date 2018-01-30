@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!--
+	Beckman
+	Home.html
+-->
+
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+		<link rel='stylesheet' type='text/css' href='Home.css'>
+	</head>
+	<body>
+	
+		<!--***********Navigation Bar*************-->
+		<div class="navBar">
+			<div class="navBar-content">
+				<a class="active" href="Home.html">Home</a>
+				<a href="\..\..\csci330webproject\VoterSetup\VoterSetup.html">Registration</a>
+				<a href="\..\..\csci330webproject\Voting\Voting.html">Cast Ballot</a>
+				<a href="\..\..\csci330webproject\VotingResults\VotingResults.php">Real-time
+					Election Results</a>
+			</div>
+		</div>
+		
+		<!--***********Welcome message*************-->
+		<div class="main">
+			<h1 style="text-align: center">Welcome to Rock Island's online voting platform!</h1><br>
+			<ul>
+				<li><h2>You can <a href="\..\..\csci330webproject\VoterSetup\VoterSetup.html">register here</a>.
+					</h2></li>
+				<li><h2>You can <a href="\..\..\csci330webproject\Voting\\Voting.html">vote now</a> if you have 
+					already registered.</h2></li>
+			</ul><br>
+			<h2 style="text-align: center">Read more about the process below!</h2>
+		
+		</div>
+		
+		<!--***********Explanatory information about the process of online voting via blockchain*************-->
+		<div class="main2">
+			<h1>How does it work?</h1>
+			<p>
+				<u>Blockchain Technology</u><br>
+				This voting system utilizes a blockchain-style database to store user information and votes.
+				<a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" style="text-decoration: none">Wikipedia
+				describes blockchains</a> as "a continuously growing list of records, called <i>blocks</i>, which are 
+				linked and secured using cryptography." This list of records is essentially a ledger of transaction
+				history. Exact copies of the ledger are kept on multiple computers, called <i>nodes</i>, across a wide network. Each computer 
+				routinely compares its copy	of the ledger against all others on the network as transactions take place. 
+				This way the ownership of digital assets is always tracked, so no one can cheat the sytem by "double 
+				spending" an asset or lying about the amount of assets they own.<br>
+				<u>Applying Blockchains to Voting</u><br>
+				The blockchain principle previously described can be used to allow voters to cast votes and have them
+				securely stored. The digital asset becomes the vote to be cast, and the ledger becomes a record of votes
+				being sent from voters to respective candidates.
+			</p>
+			<img src="blockchain_infographic.png" alt="The blockchain process">
+		</div>
+		
+		<div class="main3">
+			<h1>Is it secure?</h1>
+			<p>
+				<u>Inherent Security</u><br>
+				Blockchain ledgers are secure by their nature. New blocks of transactions are added to the chain only after
+				a computationally difficult hash algorithm has been solved. All nodes on the network continually attempt
+				to solve this algorithm, and, once having done so, they broadcast their solution to all other nodes who 
+				verify it. If the majority of nodes agrees on the solution, the new block is added to the chain and the 
+				process begins again with the next new block of transactions.
+				<a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" style="text-decoration: none">Wikipedia</a>
+				points out, "Once recorded, the data in any given block cannot be altered retroactively without the alteration
+				of all subsequent blocks, which requires collusion of the network majority."
+			</p>
+		</div>
+		
+		<div class="main3" style="background-color: darkseagreen">
+			<h1>Helpful links</h1>
+			<ul>
+				<li><h3>Online voting in <a href="https://en.wikipedia.org/wiki/Electronic_voting_in_Estonia"
+					target="_blank">Estonia</a></h3></li>
+				<li><h3>A recent Chinese <a href="https://eprint.iacr.org/2017/1043.pdf" target="_blank">study</a>
+					on blockchain voting systems</h3></li>
+				<li><h3>The <a href="https://followmyvote.com/" target="_blank">Follow My Vote</a> website</h3></li>
+			</ul>
+		</div>
+				
+	</body>
+</html>

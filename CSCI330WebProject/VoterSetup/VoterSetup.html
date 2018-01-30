@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--
+	Beckman
+	VoterSetup.html
+-->
+
+<html>
+    <head>
+        <title>Voter Setup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="VoterSetup.css">
+		<script src="VoterSetup.js"></script>
+    </head>
+    <body>
+	
+		<!--***********Navigation Bar************-->
+		<div class="navBar">
+			<div class="navBar-content">
+				<a href="\..\..\csci330webproject\home\Home.html">Home</a>
+				<a class="active" href="VoterSetup.html">Registration</a>
+				<a href="\..\..\csci330webproject\Voting\\Voting.html">Cast Ballot</a>
+				<a href="\..\..\csci330webproject\VotingResults\VotingResults.php">Real-time
+					Election Results</a>
+			</div>
+		</div>
+	
+		<h1>Thank you for your interest in registering! Please click the "Register Now!" button below to get started.</h1>
+		<input class="registerBtn" id="register" type = "submit" value = "Register Now!">
+		
+		<!--**********Pop-out Form******************-->
+        <div id="modalDiv" class="modal">
+            <form class="animateOpacity modalContent animateZoom" method = "post" action = "VoterSetup.php">
+				<div class="modalBody">
+					<span id="close" class="close">&times;</span>
+					<h2>Please enter your information.</h2>
+				
+					<p>First name:</p>
+					<p><input type = "text" name = "firstName" size = "50"></p>
+				
+					<p>Last name:</p>
+					<p><input type="text" name="lastName" size="50"></p>
+				
+						<p>Address:</p>
+					<p><input type = "text" name = "address" size = "50"></p>
+				
+					<p>Political affiliation:</p>
+					<p><input type = "text" name = "politicalAff" size = "50"></p>
+				
+					<p>Ward:</p>
+					<p><input type = "text" name = "ward" size = "50"></p>
+					
+					<input id="key" type="hidden" name="id" value="">
+				
+					<div class="float-right">
+						<input id="cancel" type = "button" value = "Cancel">
+						<input id="submit" type = "submit" value = "Submit">
+					</div>
+				</div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
